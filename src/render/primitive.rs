@@ -122,7 +122,7 @@ impl Primitive {
             shader_flags |= ShaderFlags::HAS_NORMALS;
         }
         else {
-            debug!("Found no NORMALs for primitive {} of mesh {} \
+            info!("Found no NORMALs for primitive {} of mesh {} \
                    (flat normal calculation not implemented yet)", primitive_index, mesh_index);
         }
 
@@ -134,7 +134,7 @@ impl Primitive {
             shader_flags |= ShaderFlags::HAS_TANGENTS;
         }
         else {
-            debug!("Found no TANGENTS for primitive {} of mesh {} \
+            info!("Found no TANGENTS for primitive {} of mesh {} \
                    (tangent calculation not implemented yet)", primitive_index, mesh_index);
         }
 
